@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FireFly 隐私协议</title>
+    <title>FireFly Privacy Policy</title>
     <style>
         * {
             margin: 0;
@@ -20,6 +19,36 @@
             line-height: 1.8;
             color: #222;
             background-color: #fff;
+        }
+
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .lang-btn {
+            padding: 6px 16px;
+            border: 1px solid #007aff;
+            background: #fff;
+            color: #007aff;
+            border-radius: 16px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .lang-btn:hover {
+            background: #f0f7ff;
+        }
+
+        .lang-btn.active {
+            background: #007aff;
+            color: #fff;
         }
 
         h1 {
@@ -43,6 +72,10 @@
             margin-bottom: 8px;
         }
 
+        p {
+            margin-bottom: 8px;
+        }
+
         .contact {
             margin-top: 30px;
             padding-top: 20px;
@@ -57,52 +90,146 @@
         a:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 600px) {
+            .lang-switcher {
+                position: relative;
+                top: 0;
+                right: 0;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
-
 <body>
-    <h1>FireFly 隐私协议</h1>
-
-    <h2>一、信息收集</h2>
-    <ul>
-        <li>注册登录：收集邮箱地址用于身份验证。</li>
-        <li>使用数据：收集应用崩溃日志和功能使用统计以优化体验。</li>
-        <li>支付信息：内购通过 Apple 处理，本应用不收集支付信息。</li>
-    </ul>
-
-    <h2>二、信息使用</h2>
-    <ul>
-        <li>邮箱用于发送验证码和重要通知。</li>
-        <li>崩溃日志用于修复 Bug。</li>
-        <li>使用统计用于优化功能。</li>
-    </ul>
-
-    <h2>三、信息存储</h2>
-    <ul>
-        <li>持仓、分红、FIRE 配置等财务数据优先存储在本地设备。</li>
-        <li>登录用户可选择同步数据到云端服务器。</li>
-        <li>服务器采用加密存储，用户可随时删除账户清除云端数据。</li>
-    </ul>
-
-    <h2>四、信息共享</h2>
-    <p>本应用不会将您的个人信息出售、交易或转让给第三方。</p>
-    <p>本App无广告、无统计、无第三方数据采集SDK。</p>
-
-    <h2>五、您的权利</h2>
-    <ul>
-        <li>查看和修改个人资料。</li>
-        <li>导出持仓数据。</li>
-        <li>删除账户，所有云端数据将被永久清除。</li>
-    </ul>
-
-    <h2>六、政策更新</h2>
-    <p>本协议可能不时更新，更新后将在应用内通知。</p>
-
-    <div class="contact">
-        <h2>七、联系我们</h2>
-        <p>邮箱：monsterallard@gmail.com</p>
-        <p style="margin-top:16px;"><a href="./index.html">← 返回技术支持页面</a></p>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
     </div>
-</body>
 
+    <!-- English Content (Default) -->
+    <div id="content-en">
+        <h1>FireFly Privacy Policy</h1>
+
+        <h2>1. Information Collection</h2>
+        <ul>
+            <li>Registration & Login: We collect your email address for identity verification.</li>
+            <li>Usage Data: We collect app crash logs and feature usage statistics to improve your experience.</li>
+            <li>Payment Information: In-app purchases are processed by Apple; we do not collect payment information.</li>
+        </ul>
+
+        <h2>2. Use of Information</h2>
+        <ul>
+            <li>Your email is used to send verification codes and important notifications.</li>
+            <li>Crash logs are used to fix bugs.</li>
+            <li>Usage statistics are used to optimize features.</li>
+        </ul>
+
+        <h2>3. Information Storage</h2>
+        <ul>
+            <li>Financial data such as holdings, dividends, and FIRE configurations is stored locally on your device by default.</li>
+            <li>Logged-in users can choose to sync data to our cloud server.</li>
+            <li>Servers use encrypted storage, and you can delete your account at any time to clear cloud data.</li>
+        </ul>
+
+        <h2>4. Information Sharing</h2>
+        <p>We do not sell, trade, or transfer your personal information to third parties.</p>
+        <p>This app has no advertisements, no analytics, and no third-party data collection SDKs.</p>
+
+        <h2>5. Your Rights</h2>
+        <ul>
+            <li>View and modify your profile.</li>
+            <li>Export your holdings data.</li>
+            <li>Delete your account, and all cloud data will be permanently erased.</li>
+        </ul>
+
+        <h2>6. Policy Updates</h2>
+        <p>This policy may be updated from time to time, and you will be notified within the app after updates.</p>
+
+        <div class="contact">
+            <h2>7. Contact Us</h2>
+            <p>Email: monsterallard@gmail.com</p>
+            <p style="margin-top:16px;"><a href="./index.html">← Back to Support Page</a></p>
+        </div>
+    </div>
+
+    <!-- Chinese Content -->
+    <div id="content-zh" style="display:none;">
+        <h1>FireFly 隐私协议</h1>
+
+        <h2>一、信息收集</h2>
+        <ul>
+            <li>注册登录：收集邮箱地址用于身份验证。</li>
+            <li>使用数据：收集应用崩溃日志和功能使用统计以优化体验。</li>
+            <li>支付信息：内购通过 Apple 处理，本应用不收集支付信息。</li>
+        </ul>
+
+        <h2>二、信息使用</h2>
+        <ul>
+            <li>邮箱用于发送验证码和重要通知。</li>
+            <li>崩溃日志用于修复 Bug。</li>
+            <li>使用统计用于优化功能。</li>
+        </ul>
+
+        <h2>三、信息存储</h2>
+        <ul>
+            <li>持仓、分红、FIRE 配置等财务数据优先存储在本地设备。</li>
+            <li>登录用户可选择同步数据到云端服务器。</li>
+            <li>服务器采用加密存储，用户可随时删除账户清除云端数据。</li>
+        </ul>
+
+        <h2>四、信息共享</h2>
+        <p>本应用不会将您的个人信息出售、交易或转让给第三方。</p>
+        <p>本App无广告、无统计、无第三方数据采集SDK。</p>
+
+        <h2>五、您的权利</h2>
+        <ul>
+            <li>查看和修改个人资料。</li>
+            <li>导出持仓数据。</li>
+            <li>删除账户，所有云端数据将被永久清除。</li>
+        </ul>
+
+        <h2>六、政策更新</h2>
+        <p>本协议可能不时更新，更新后将在应用内通知。</p>
+
+        <div class="contact">
+            <h2>七、联系我们</h2>
+            <p>邮箱：monsterallard@gmail.com</p>
+            <p style="margin-top:16px;"><a href="./index.html">← 返回技术支持页面</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.getElementById('content-en').style.display = 'none';
+            document.getElementById('content-zh').style.display = 'none';
+
+            // Show selected content
+            document.getElementById('content-' + lang).style.display = 'block';
+
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+
+            // Update html lang attribute
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+
+            // Save preference
+            localStorage.setItem('privacy-lang', lang);
+        }
+
+        // Load saved language preference on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('privacy-lang');
+            if (savedLang && (savedLang === 'en' || savedLang === 'zh')) {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
 </html>
