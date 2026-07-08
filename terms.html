@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireFly Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            max-width: 680px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+            color: #222;
+            background-color: #fff;
+        }
+
+        /* Language Switcher */
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .lang-btn {
+            padding: 6px 16px;
+            border: 1px solid #007aff;
+            background: #fff;
+            color: #007aff;
+            border-radius: 16px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .lang-btn:hover {
+            background: #f0f7ff;
+        }
+
+        .lang-btn.active {
+            background: #007aff;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 28px 0 12px;
+            color: #111;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 8px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .lang-switcher {
+                position: relative;
+                top: 0;
+                right: 0;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+    </div>
+
+    <!-- English Content (Default) -->
+    <div id="content-en">
+        <h1>FireFly Terms of Service</h1>
+
+        <h2>1. Service Description</h2>
+        <p>FireFly (hereinafter referred to as "the App") is a personal finance and dividend tracking tool that provides asset tracking, dividend forecasting, FIRE (Financial Independence, Retire Early) simulation, and other features.</p>
+
+        <h2>2. User Responsibilities</h2>
+        <ul>
+            <li>You must ensure that the account information you provide is accurate and valid.</li>
+            <li>You are responsible for safeguarding your account password and verification codes. Any losses resulting from credential disclosure shall be borne by you.</li>
+            <li>You must not use the App for any illegal or unauthorized activities.</li>
+        </ul>
+
+        <h2>3. Data & Privacy</h2>
+        <ul>
+            <li>The App only collects necessary account information (email) for identity verification and data synchronization.</li>
+            <li>Your financial data, including holdings, dividends, and FIRE configurations, is stored locally on your device by default. You may choose to sync it to the cloud.</li>
+            <li>The App does not sell or share your data with third parties.</li>
+        </ul>
+
+        <h2>4. Disclaimer</h2>
+        <ul>
+            <li>The FIRE simulations, dividend forecasts, and other data provided by the App are for reference only and do not constitute investment advice.</li>
+            <li>Markets involve risk. Exercise caution when investing.</li>
+            <li>The App is not liable for data loss resulting from force majeure events or server failures.</li>
+        </ul>
+
+        <h2>5. Service Changes</h2>
+        <p>The App reserves the right to modify this agreement at any time. The revised agreement will be posted within the App.</p>
+
+        <div class="contact">
+            <h2>6. Contact</h2>
+            <p>Email: monsterallard@gmail.com</p>
+            <p style="margin-top:16px;"><a href="./index.html">← Back to Support Page</a></p>
+        </div>
+    </div>
+
+    <!-- Chinese Content -->
+    <div id="content-zh" style="display:none;">
+        <h1>FireFly 用户协议</h1>
+
+        <h2>一、服务说明</h2>
+        <p>FireFly（以下简称"本应用"）是一款个人财务与分红记录管理工具，提供资产追踪、分红预测、FIRE（财务自由）模拟等功能。</p>
+
+        <h2>二、用户责任</h2>
+        <ul>
+            <li>用户应确保提供的账户信息真实有效。</li>
+            <li>用户应妥善保管账户密码和验证码，因密码泄露导致的损失由用户自行承担。</li>
+            <li>用户不得利用本应用从事违法违规活动。</li>
+        </ul>
+
+        <h2>三、数据与隐私</h2>
+        <ul>
+            <li>本应用仅收集必要的账户信息（邮箱）用于身份识别和数据同步。</li>
+            <li>用户的持仓、分红、FIRE配置等财务数据默认保存在本地设备，用户可选择同步到云端。</li>
+            <li>本应用不会将用户数据出售或分享给第三方。</li>
+        </ul>
+
+        <h2>四、免责声明</h2>
+        <ul>
+            <li>本应用提供的FIRE模拟、分红预测等数据仅为参考，不构成投资建议。</li>
+            <li>市场有风险，投资需谨慎。</li>
+            <li>因不可抗力或服务器故障导致的数据丢失，本应用不承担责任。</li>
+        </ul>
+
+        <h2>五、服务变更</h2>
+        <p>本应用保留随时修改本协议的权利，修改后的协议将在应用内公示。</p>
+
+        <div class="contact">
+            <h2>六、联系方式</h2>
+            <p>邮箱：monsterallard@gmail.com</p>
+            <p style="margin-top:16px;"><a href="./index.html">← 返回技术支持页面</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.getElementById('content-en').style.display = 'none';
+            document.getElementById('content-zh').style.display = 'none';
+
+            // Show selected content
+            document.getElementById('content-' + lang).style.display = 'block';
+
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
+
+            // Update html lang attribute
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+
+            // Save preference
+            localStorage.setItem('terms-lang', lang);
+        }
+
+        // Load saved language preference on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('terms-lang');
+            if (savedLang && (savedLang === 'en' || savedLang === 'zh')) {
+                switchLang(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
